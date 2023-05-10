@@ -1,0 +1,17 @@
+Target:
+bash-3.1# gdbserver localhost:10000 vim /etc/network/interfaces 
+Process vim created; pid = 335
+Listening on port 10000
+
+Host:
+$ ~/timesys/omap3530zoom/toolchain/bin/armv7l-timesys-linux-gnueabi-gdb
+
+(gdb) file vim
+Reading symbols from /home/timesys/factory/build_armv7l-timesys-linux-gnueabi/vim-7.2/vim72/src/vim...done.
+
+(gdb) target remote 10.5.5.30:10000
+Remote debugging using 10.5.5.30:10000
+[New Thread 335]
+0x400007c0 in _start ()
+   from ~/timesys/omap3530zoom/toolchain/lib/ld-linux.so.3
+(gdb) 
