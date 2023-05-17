@@ -14,3 +14,7 @@ coreutils-8.32-4.fc32.1.src.rpm 10 kB/s | 5.4 MB 08:47
 install gcc-toolset-10
 source /opt/rh/gcc-toolset-10/enable
 ------------------ end ------------------
+
+------------删除非 xxx 的文件-----------
+rm -rf !("xxx")
+------------------ end ------------------
