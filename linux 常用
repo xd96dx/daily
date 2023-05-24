@@ -18,3 +18,10 @@ source /opt/rh/gcc-toolset-10/enable
 ------------删除非 xxx 的文件-----------
 rm -rf !("xxx")
 ------------------ end ------------------
+
+
+------------解决github 推代码问题-----------
+error: Failed to connect to github.com port 443 after 21075 ms: Timed out
+
+git config --global http.proxy 127.0.0.1:33210
+------------------ end ------------------
