@@ -35,3 +35,7 @@ git config --global http.proxy 127.0.0.1:33210
 https://www.pdfdrive.com/   pdf search
 https://www.musicenc.com/   MP3 search
 ------------------ end ------------------
+
+--------- wget 下载目录下文件 ------------
+wget -r -np --no-parent <目录链接>
+-----------------end---------------------
