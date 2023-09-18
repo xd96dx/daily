@@ -39,3 +39,7 @@ https://www.musicenc.com/   MP3 search
 --------- wget 下载目录下文件 ------------
 wget -r -np --no-parent <目录链接>
 -----------------end---------------------
+
+--------- yum download -----------------
+yum install --downloadonly --downloaddir=/tmp firefox mutt
+-----------------end---------------------
