@@ -43,3 +43,26 @@ wget -r -np --no-parent <目录链接>
 --------- yum download -----------------
 yum install --downloadonly --downloaddir=/tmp firefox mutt
 -----------------end---------------------
+
+
+
+--------- linux 安装wine 使用微信 -----------------
+sudo dnf -y update
+sudo reboot
+
+sudo dnf groupinstall 'Development Tools' -y
+sudo dnf -y install epel-release
+sudo dnf config-manager --set-enabled powertools
+sudo dnf -y install libxslt-devel libpng-devel libX11-devel zlib-devel libtiff-devel freetype-devel libxcb-devel  libxml2-devel libgcrypt-devel dbus-devel libjpeg-turbo-devel  fontconfig-devel gnutls-devel gstreamer1-devel libXcursor-devel libXi-devel libXrandr-devel libXfixes-devel libXinerama-devel libXcomposite-devel mesa-libOSMesa-devel libpcap-devel libusb-devel libv4l-devel libgphoto2-devel gstreamer1-devel libgudev SDL2-devel gsm-devel libvkd3d-devel libudev-devel make cmake gcc flex
+sudo dnf install libXcursor-devel libXrandr-devel libXinerama-devel libXi-devel mesa-libGL-devel
+sudo dnf -y install wget
+curl -O https://dl.winehq.org/wine/source/8.x/wine-8.1.tar.xz
+tar xvf wine-8.1.tar.xz
+cd wine-*/
+./configure --enable-win64 
+make
+sudo make install
+-----------------end---------------------
+
+
+
