@@ -1,3 +1,11 @@
 header="https://account.jetbrains.com/fls-auth"
 Location: https://account.jetbrains.com/fls-auth
 Location: https://account.jetbrains.com/fls-auth
+
+
+Fofa
+header="https://account.jetbrains.com/fls-auth"
+Shodan
+Location: https://account.jetbrains.com/fls-auth
+Censys
+services.http.response.headers.location: account.jetbrains.com/fls-auth
