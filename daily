@@ -44,6 +44,17 @@ wget -r -np --no-parent <目录链接>
 yum install --downloadonly --downloaddir=/tmp firefox mutt
 -----------------end---------------------
 
+-----------clion crash-------------------
+2024-02-08 15:50:10,538 [   5358]   WARN - #o.j.p.t.TextMateService - Cannot find referenced file `./language-configuration.json` in bundle `/home/xd/clion-2023.3.3/plugins/textmate/lib/bundles/mdx`
+2024-02-08 15:50:17,375 [  12195]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.ui.jcef.JBCefApp$Holder initializer requests com.intellij.ui.jcef.JBCefAppCache instance
+[0208/155017.643470:FATAL:setuid_sandbox_host.cc(158)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/xd/clion-2023.3.3/jbr/lib/chrome-sandbox is owned by root and has mode 4755.
+Trace/breakpoint trap (core dumped)
+
+clion.sh  dontReopenProjects
+ctrl+shift+a to open the Find Action dialog, type Registry...
+disable the ide.browser.jcef.sandbox.enable
+-----------------end---------------------
+
 
 
 --------- linux 安装wine 使用微信 -----------------
